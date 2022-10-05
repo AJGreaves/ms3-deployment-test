@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        {% for movie in movies %}
+        <div class="col-12">
+            <h2>{{ movie.title }}</h2>
+            <p><strong>{{ movie.category}}</strong></p>
+            <p>{{ movie.year }}</p>
+            <hr>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
